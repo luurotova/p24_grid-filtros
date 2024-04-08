@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gris: #e8e8e8;
+    --negro: #1a1a1a;
+    --main-font-family: 'Gemunu Libre', sans-serif;
+    --secondary-font-family: 'Nunito Sans', sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    height: 100px;
+    background-color: var(--gris);
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+}
+
+.header__nav-list--item{
+    font-family: var(--main-font-family);
+    font-size: 1.2rem;
+}
+
+.header__logo-fantasmita {
+    height: 75px;
+}
+
+.header__responsive-btn-img{
+    display: none;
+    height: 27px;
+}
+
+@media screen and (max-width: 968px) {
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__responsive-btn-img{
+        display: block;
+    }
+    
+}
+/* /HEADER */
+
+/* MAIN */
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.main-header__title{
+    font-family: var(--main-font-family);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--negro);
+    text-align: center;
+    margin: 0 50px 20px 50px;
+}
+
+.main-header__filters{
+    font-family: var(--secondary-font-family);
+}
+
+.main-header__filters--categoria{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: #1a1a1a 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* GRID */
+.movie-grid__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    background-color: var(--negro);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-grid__item{
+    position: relative;
+    text-align: center;
+    color: var(--negro);  
+    border: 2px solid var(--negro);
+    background-color: aquamarine;
+    font-family: var(--main-font-family);
+    padding: 10px;
+    font-size: 1.5rem;
+    
+}
+
+.movie-grid__mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* GRID */
+
+/* /MAIN */
+

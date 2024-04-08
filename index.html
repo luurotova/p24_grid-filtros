@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>Grid Filtros</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-fantasmita" src="img/ghost.svg" alt="logo">
+        </div>
+        <nav class="header__nav-container">
+            <ul class="header__nav-list">
+                <li class="header__nav-list header__nav-list--item">home</li>
+                <li class="header__nav-list header__nav-list--item">about us</li>
+                <li class="header__nav-list header__nav-list--item">projects</li>
+                <li class="header__nav-list header__nav-list--item">contact</li>
+            </ul>
+        </nav>
+        <button class="header__responsive-btn">
+            <img class="header__responsive-btn-img" src="img/nav.svg" alt="menu button">
+        </button>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <!-- FILTER -->
+    <section class="main-header">
+        <p class="main-header__title">FILTERED CONTENT</p>
+        <ul class="main-header__filters">
+            <button class="main-header__filters main-header__filters--categoria" data-filtro="all">all</button>
+            <button class="main-header__filters main-header__filters--categoria" data-filtro="comedia">comedia</button>
+            <button class="main-header__filters main-header__filters--categoria" data-filtro="drama">drama</button>
+            <button class="main-header__filters main-header__filters--categoria" data-filtro="ciencia-ficcion">ciencia
+                ficción</button>
+            <button class="main-header__filters main-header__filters--categoria" data-filtro="terror">terror</button>
+        </ul>
+
+    </section>
+    <!-- /FILTER -->
+    <!-- FRASES GRID -->
+    <section class="movie-grid">
+        <div class="movie-grid__container" >
+            <p class="movie-grid__item" data-categoria="comedia">"Francamente, querida, me importa un bledo" <br> (Lo que el viento se llevó)
+            </p>
+            <p class="movie-grid__item" data-categoria="comedia">"Voy a hacerle una oferta que no podrá rechazar" <br> (El padrino)</p>
+            <p class="movie-grid__item" data-categoria="drama">"No lo entiendes. Pude haber tenido clase. Pude haber sido alguien, en lugar de un vago, que eso es lo que soy, aceptémoslo" <br> (La ley del silencio)</p>
+            <p class="movie-grid__item" data-categoria="ciencia-ficcion">"Me parece que ya no estamos en Kansas" <br> (El mago de Oz)</p>
+            <p class="movie-grid__item" data-categoria="terror">"Cuando quieras señor DeMille, estoy lista para rodar" <br> (El crepúsculo de los dioses) </p>
+            <p class="movie-grid__item" data-categoria="terror">"Que la fuerza te acompañe" <br> (Star Wars)</p>
+            <p class="movie-grid__item" data-categoria="ciencia-ficcion">"Abróchense los cinturones. Esta va a ser una noche movidita" <br> (Eva al desnudo)</p>
+            <p class="movie-grid__item" data-categoria="drama">"¿Hablas conmigo?" (Taxi Driver)</p>
+        </div>
+    </section>
+    <!-- /FRASES GRID -->
+    <!-- /MAIN -->
+
+    
+
+
+</body>
+
+</html>
